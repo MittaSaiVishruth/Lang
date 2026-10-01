@@ -1,0 +1,24 @@
+#.env file 
+API_Key = "abcdefgh12345"
+
+#.py file
+
+from langchain_openai import ChatOpenAI # change the line to call another model
+from dotenv import load_dotenv
+
+load_dotenv()
+
+model = ChatOpenAI(model='gpt-4', temperature=0) #Change the line to set to the model to satify requirements
+result=model.invoke("text regarding question")
+print(result.content)
+
+## prompts
+# Dynamic and reusable prompts
+
+from langchain_core.prompts import PromptTemplete
+
+prompt=PromptTemplete.from_templete('Summarize {topic} in {emotion} tone') # 
+
+print(prompt.format(topic='cricket',emotion='fun')
+
+#Role-Based Prompts

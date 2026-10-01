@@ -1,0 +1,13 @@
+LangChain interview notes
+
+LangChain is a framework for building applications around large language models. It provides components for prompts, models, retrievers, tools, and structured workflows.
+
+Retrieval-Augmented Generation (RAG) combines retrieval with generation. Documents are split into chunks, embeddings are created, and a vector store is used to retrieve relevant chunks for a user query.
+
+Embeddings are numerical representations of text. Semantic search compares vector representations so related meanings can be retrieved even when exact keywords differ.
+
+Streamlit is a Python framework for quickly building interactive data and machine-learning applications. Streamlit reruns an application script when widgets are interacted with, and session_state can preserve user-specific state across reruns.
+
+Ollama runs supported language and embedding models locally. LangChain provides integrations such as ChatOllama and OllamaEmbeddings for using Ollama models from Python.
+
+A good production RAG system should evaluate retrieval quality, generation quality, latency, security, and failure cases. It should avoid blindly trusting model output and should make evidence available when appropriate.
